@@ -4,6 +4,7 @@ from telegram.ext import ContextTypes, Application, CommandHandler
 from api import get_weather, get_rate
 from config import TOKEN
 
+
 data = {"notes": [], "expenses": []}
 def save_data():
     with open("data.json", "w") as f:
